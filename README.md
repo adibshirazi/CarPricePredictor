@@ -1,8 +1,19 @@
-# CarPricePredictor 
+# Car Price Prediction Project
 
-in this project im using Machine Learning to find the possible price of the specefic car with details that user write it for us
+This project is a car price prediction tool that allows users to scrape car data from TrueCar's website, store it in a MySQL database, and use machine learning to predict car prices based on model, car type, and mileage.
 
-with fetch_data.py we can fetch data(car, model, mile, price) from the site and put it into the database
+## Features
 
-with main_app.py  we can use this database and with maching learning we can guess the price of the user's car
-it means that the user write the car, model and mile, and we guess the price
+- Web scraping from TrueCar using BeautifulSoup
+- Data stored in a MySQL database
+- Predict car prices using a DecisionTreeRegressor model
+- OneHotEncoder for handling categorical features (car name, model)
+
+## Project Structure
+
+- `fetch_data.py`: Scrapes car data (name, model, price, mileage) from TrueCar and inserts it into a MySQL database.
+- `main_app.py`: Uses machine learning to predict car prices based on user input (car name, model, mileage) using previously scraped data.
+
+## License
+
+This project is open-source and available under the [AGPL-3.0 License](LICENSE).
