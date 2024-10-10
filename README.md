@@ -16,4 +16,4 @@ This project is a car price prediction tool that allows users to scrape car data
 
 ## License
 
-This project is open-source and available under the [AGPL-3.0 License](LICENSE).
+This project is open-source and available under the [MIT License](LICENSE).
